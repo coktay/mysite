@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to Help UK - Friends Program</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A90E2;
+            --primary-dark: #3A7BC8;
+            --secondary: #FF8C42;
+            --dark: #333333;
+            --gray: #777777;
+            --light-gray: #F5F7FA;
+            --white: #FFFFFF;
+            --bronze: #CD7F32;
+            --silver: #C0C0C0;
+            --gold: #FFD700;
+            --platinum: #E5E4E2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background-color: var(--white);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .hero {
+            background: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            padding: 200px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: var(--white);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: var(--white);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .highlight {
+            color: var(--primary);
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 60px 0 0;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            min-width: 200px;
+            transform: translateY(50%);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .stat-label {
+            color: var(--gray);
+            font-weight: 500;
+        }
+        
+        .about {
+            padding: 120px 0 80px;
+            background-color: var(--white);
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-img {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            height: 500px;
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .about-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: var(--gray);
+        }
+        
+        .levels {
+            padding: 100px 0;
+            background-color: var(--light-gray);
+            background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .levels::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(245, 247, 250, 0.9);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .level-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            position: relative;
+        }
+        
+        .level-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 270px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .level-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .level-card.featured {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border: 2px solid var(--primary);
+        }
+        
+        .level-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .popular-tag {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary);
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        
+        .level-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .bronze .level-icon {
+            color: var(--bronze);
+        }
+        
+        .silver .level-icon {
+            color: var(--silver);
+        }
+        
+        .gold .level-icon {
+            color: var(--gold);
+        }
+        
+        .platinum .level-icon {
+            color: var(--platinum);
+        }
+        
+        .level-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .level-price {
+            margin-bottom: 25px;
+        }
+        
+        .price-amount {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .price-currency {
+            font-size: 1.5rem;
+            vertical-align: top;
+            position: relative;
+            top: 8px;
+        }
+        
+        .price-period {
+            font-size: 1rem;
+            color: var(--gray);
+        }
+        
+        .level-features {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .level-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+        }
+        
+        .level-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .level-features i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+        
+        .btn-level {
+            width: 100%;
+            background-color: var(--white);
+            border: 2px solid;
+            color: var(--dark);
+        }
+        
+        .bronze .btn-level {
+            border-color: var(--bronze);
+        }
+        
+        .bronze .btn-level:hover {
+            background-color: var(--bronze);
+            color: var(--white);
+        }
+        
+        .silver .btn-level {
+            border-color: var(--silver);
+        }
+        
+        .silver .btn-level:hover {
+            background-color: var(--silver);
+            color: var(--dark);
+        }
+        
+        .gold .btn-level {
+            border-color: var(--gold);
+        }
+        
+        .gold .btn-level:hover {
+            background-color: var(--gold);
+            color: var(--dark);
+        }
+        
+        .platinum .btn-level {
+            border-color: var(--platinum);
+        }
+        
+        .platinum .btn-level:hover {
+            background-color: var(--platinum);
+            color: var(--dark);
+        }
+        
+        .impact {
+            padding: 100px 0;
+            background-color: var(--white);
+            text-align: center;
+        }
+        
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .impact-item {
+            background-color: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .impact-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .impact-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .impact-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .impact-item:hover .impact-img img {
+            transform: scale(1.1);
+        }
+        
+        .impact-content {
+            padding: 25px;
+        }
+        
+        .impact-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .gallery {
+            padding: 100px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 20px;
+            margin-top: 60px;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .gallery-item:nth-child(1) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+        
+        .gallery-item:nth-child(2) {
+            grid-column: 3 / 5;
+            grid-row: 1 / 2;
+        }
+        
+        .gallery-item:nth-child(3) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        
+        .gallery-item:nth-child(4) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        
+        .gallery-item:nth-child(5) {
+            grid-column: 3 / 5;
+            grid-row: 2 / 3;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: var(--white);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+        
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--white);
+            background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.9);
+        }
+        
+        .testimonial-container {
+            margin-top: 60px;
+            position: relative;
+            max-width: 900px;
+            margin: 60px auto 0;
+            z-index: 1;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-item {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .testimonial-content::before {
+            content: '"';
+            position: absolute;
+            top: -30px;
+            left: -10px;
+            font-size: 5rem;
+            color: var(--primary);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 3px solid var(--primary);
+        }
+        
+        .author-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .cta {
+            padding: 150px 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center/cover no-repeat fixed;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .btn-white {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+        
+        .btn-white:hover {
+            background-color: rgba(255,255,255,0.9);
+            color: var(--primary-dark);
+        }
+        
+        .btn-outline-white {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+        
+        .btn-outline-white:hover {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        footer {
+            background-color: #222;
+            color: var(--white);
+            padding: 80px 0 30px;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(34, 34, 34, 0.95);
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-text {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-nav a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 250px);
+            }
+            
+            .gallery-item:nth-child(1) {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            
+            .gallery-item:nth-child(2) {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            
+            .gallery-item:nth-child(3) {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            
+            .gallery-item:nth-child(4) {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            
+            .gallery-item:nth-child(5) {
+                grid-column: 1 / 3;
+                grid-row: 3 / 4;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .level-container {
+                gap: 20px;
+            }
+            
+            .level-card {
+                max-width: 250px;
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-img {
+                height: 400px;
+                order: 2;
+            }
+            
+            .about-content {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 150px 0 150px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats {
+                gap: 20px;
+                flex-direction: column;
+                margin-top: 40px;
+            }
+            
+            .stat-item {
+                min-width: 100%;
+                transform: translateY(0);
+            }
+            
+            .level-card {
+                max-width: 100%;
+            }
+            
+            .level-card.featured {
+                transform: scale(1);
+            }
+            
+            .level-card.featured:hover {
+                transform: translateY(-10px);
+            }
+            
+            .gallery-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 250px);
+            }
+            
+            .gallery-item:nth-child(n) {
+                grid-column: 1 / 2;
+            }
+            
+            .gallery-item:nth-child(1) {
+                grid-row: 1 / 2;
+            }
+            
+            .gallery-item:nth-child(2) {
+                grid-row: 2 / 3;
+            }
+            
+            .gallery-item:nth-child(3) {
+                grid-row: 3 / 4;
+            }
+            
+            .gallery-item:nth-child(4) {
+                grid-row: 4 / 5;
+            }
+            
+            .gallery-item:nth-child(5) {
+                grid-row: 5 / 6;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta h2 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .about-img {
+                height: 300px;
+            }
+            
+            .cta {
+                padding: 100px 0;
+            }
+            
+            .cta h2 {
+                font-size: 1.8rem;
+            }
+            
+            .testimonial-item {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" alt="Time to Help UK Logo">
+            </div>
+            <a href="#join" class="btn">Donate Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1>Become a <span class="highlight">Friend</span> of Time to Help UK</h1>
+                <p>Join our community of monthly donors and make a lasting impact on those who need it most. Choose your level of support and help us create positive change.</p>
+                <a href="#levels" class="btn">Join Our Friends Program</a>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-label">Monthly Donors</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">£2.5M</div>
+                <div class="stat-label">Raised This Year</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Active Projects</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Countries Reached</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="People helping in community">
+            </div>
+            <div class="about-content">
+                <h2>Our Mission</h2>
+                <p>Time to Help UK is dedicated to alleviating suffering and promoting sustainable development through humanitarian aid, education, and community empowerment projects across the UK and worldwide.</p>
+                <p>As a Friend of Time to Help UK, your monthly donation provides consistent support that allows us to plan for the future and respond quickly to emergencies. Your generosity transforms lives and builds stronger communities.</p>
+                <p>Join us in our mission to create a world where all people have access to basic necessities, education, and opportunities to build better futures for themselves and their communities.</p>
+                <a href="#levels" class="btn">Become a Friend Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Levels Section -->
+    <section id="levels" class="levels">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your Impact Level</h2>
+                <p>Make a monthly donation and join our community of Friends at the level that works for you</p>
+            </div>
+            
+            <div class="level-container">
+                <div class="level-card bronze">
+                    <div class="level-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="level-name">Bronze Friend</h3>
+                    <div class="level-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount">10</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> Monthly impact updates</li>
+                        <li><i class="fas fa-check"></i> Digital badge for social sharing</li>
+                        <li><i class="fas fa-check"></i> Name on our donor wall</li>
+                        <li><i class="fas fa-check"></i> Quarterly newsletter</li>
+                    </ul>
+                    <a href="#join" class="btn btn-level">Become a Bronze Friend</a>
+                </div>
+                
+                <div class="level-card silver featured">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="level-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="level-name">Silver Friend</h3>
+                    <div class="level-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount">25</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> All Bronze benefits</li>
+                        <li><i class="fas fa-check"></i> Personalized impact reports</li>
+                        <li><i class="fas fa-check"></i> Early access to events</li>
+                        <li><i class="fas fa-check"></i> Silver Friend certificate</li>
+                        <li><i class="fas fa-check"></i> Annual thank you gift</li>
+                    </ul>
+                    <a href="#join" class="btn btn-level">Become a Silver Friend</a>
+                </div>
+                
+                <div class="level-card gold">
+                    <div class="level-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="level-name">Gold Friend</h3>
+                    <div class="level-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount">50</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> All Silver benefits</li>
+                        <li><i class="fas fa-check"></i> Invitation to annual gala</li>
+                        <li><i class="fas fa-check"></i> Exclusive project updates</li>
+                        <li><i class="fas fa-check"></i> Personal thank you video</li>
+                        <li><i class="fas fa-check"></i> Direct funds to projects</li>
+                    </ul>
+                    <a href="#join" class="btn btn-level">Become a Gold Friend</a>
+                </div>
+                
+                <div class="level-card platinum">
+                    <div class="level-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="level-name">Platinum Friend</h3>
+                    <div class="level-price">
+                        <span class="price-currency">£</span>
+                        <span class="price-amount">100</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check"></i> All Gold benefits</li>
+                        <li><i class="fas fa-check"></i> VIP project site visits</li>
+                        <li><i class="fas fa-check"></i> Recognition in annual report</li>
+                        <li><i class="fas fa-check"></i> Quarterly calls with our team</li>
+                        <li><i class="fas fa-check"></i> Platinum Friend plaque</li>
+                    </ul>
+                    <a href="#join" class="btn btn-level">Become a Platinum Friend</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Your Impact in Action</h2>
+                <p>See how your monthly donations make a real difference in communities around the world</p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-img">
+                        <img src="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Education programs">
+                    </div>
+                    <div class="impact-content">
+                        <h3>Education</h3>
+                        <p>Provided access to education for over 10,000 children in underserved communities, building schools and supporting teachers.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-img">
+                        <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Healthcare initiatives">
+                    </div>
+                    <div class="impact-content">
+                        <h3>Healthcare</h3>
+                        <p>Delivered essential medical services to 25,000 people in need across 15 countries, focusing on preventative care and treatments.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-item">
+                    <div class="impact-img">
+                       <img src="https://images.pexels.com/photos/6590920/pexels-photo-6590920.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Emergency relief">
+                    </div>
+                    <div class="impact-content">
+                        <h3>Emergency Relief</h3>
+                        <p>Responded to 12 major disasters with critical aid, reaching over 50,000 affected people with food, shelter, and medical care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Work Around the World</h2>
+                <p>A glimpse into the communities we serve and the change we create together</p>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-item">
+                   <img src="https://images.pexels.com/photos/6647175/pexels-photo-6647175.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Community building project">
+                    <div class="gallery-caption">
+                        <h3>Community Building in Kenya</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Education project">
+                    <div class="gallery-caption">
+                        <h3>School Support in India</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518398046578-8cca57782e17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Food distribution">
+                    <div class="gallery-caption">
+                        <h3>Food Distribution in London</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542884748-2b87b36c6b90?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Medical assistance">
+                    <div class="gallery-caption">
+                        <h3>Medical Assistance in Syria</h3>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/7658394/pexels-photo-7658394.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Water project">
+                    <div class="gallery-caption">
+                        <h3>Clean Water Project in Tanzania</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Friends Say</h2>
+                <p>Hear from our community of monthly supporters about their experience</p>
+            </div>
+            
+            <div class="testimonial-container">
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"Being a Silver Friend has connected me to causes I truly care about. The monthly updates make me feel like I'm really making a difference in people's lives. I appreciate how transparent Time to Help UK is about where my donations go."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Sarah Johnson">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Silver Friend for 2 years</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"I started as a Bronze Friend and gradually increased my support. The transparency in how my donations are used gives me complete confidence in Time to Help UK. I've seen firsthand the impact they make."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="James Wilson">
+                            </div>
+                            <div class="author-info">
+                                <h4>James Wilson</h4>
+                                <p>Gold Friend for 3 years</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <p>"As a Platinum Friend, I've had the opportunity to visit projects in person. Seeing the impact firsthand has been an incredible experience. The team is passionate and truly dedicated to making a difference."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Emily Parker">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Parker</h4>
+                                <p>Platinum Friend for 1 year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="join" class="cta">
+        <div class="container">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Join our community of Friends today and start your journey of impact. Your monthly donation can change lives and create lasting positive change.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-white">Become a Friend Today</a>
+                <a href="#" class="btn btn-outline-white">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" alt="Time to Help UK Logo">
+                </div>
+                <p class="footer-text">Time to Help UK is a registered charity in England and Wales (Charity No. 1234567) dedicated to alleviating suffering and promoting sustainable development through humanitarian aid, education, and community empowerment projects.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Friends Program</a>
+                    <a href="#">News & Blog</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <p class="copyright">&copy; 2025 Time to Help UK. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
