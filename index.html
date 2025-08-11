@@ -1,1 +1,1488 @@
-index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareToSave | UK Referral Codes & Discounts</title>
+    <meta name="description" content="Get exclusive referral codes and discounts for popular UK services. Save money on energy, broadband, web hosting and more with our personal recommendations.">
+    <style>
+        :root {
+            --primary-color: #2c3e69; /* Dark navy blue */
+            --secondary-color: #1dab95; /* Teal green */
+            --accent-color: #ef4444;
+            --light-accent: #f87171;
+            --success-color: #22c55e;
+            --warning-color: #f59e0b;
+            --dark-color: #2c3e69;
+            --light-color: #f8fafc;
+            --gray-color: #64748b;
+            --light-gray: #e2e8f0;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #232f52;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #18967f;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-accent:hover {
+            background-color: #dc2626;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .affiliate-label {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: var(--dark-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 28px;
+            color: var(--secondary-color);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--primary-color);
+        }
+
+        .logo-tagline {
+            font-size: 0.75rem;
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 3rem;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .hero-subtitle {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background-color: rgba(29, 171, 149, 0.1);
+            border-radius: 50px;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .hero-description {
+            color: var(--gray-color);
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .hero-stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-stat-number {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            word-break: break-word;
+        }
+
+        .hero-stat-label {
+            font-size: 0.875rem;
+            color: var(--gray-color);
+        }
+
+        .hero-image-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-image {
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-image-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--secondary-color);
+            border-radius: var(--border-radius);
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        /* Referral Cards Section */
+        .referral-section {
+            padding: 5rem 0;
+            background-color: var(--light-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-subtitle {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background-color: rgba(29, 171, 149, 0.1);
+            border-radius: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .section-description {
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+        }
+
+        .referral-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: var(--dark-color);
+            border: 1px solid var(--light-gray);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .referral-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .referral-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .referral-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .referral-card-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .referral-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .referral-card:hover .referral-card-image img {
+            transform: scale(1.05);
+        }
+
+        .referral-card-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .referral-card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .referral-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+
+        .referral-card-description {
+            color: var(--gray-color);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .referral-card-offer {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background-color: rgba(29, 171, 149, 0.1);
+            border-radius: var(--border-radius);
+        }
+
+        .referral-card-offer-icon {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+
+        .referral-card-offer-text {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.875rem;
+        }
+
+        .referral-card-btn {
+            margin-top: auto;
+        }
+
+        /* Featured Section */
+        .featured-section {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .featured-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .featured-image {
+            position: relative;
+        }
+
+        .featured-image img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            position: relative;
+            z-index: 1;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transform: rotate(5deg);
+            box-shadow: var(--box-shadow);
+            z-index: 2; /* Make sure this is higher than the image */
+        }
+
+        .featured-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .featured-subtitle {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            line-height: 1.3;
+        }
+
+        .featured-description {
+            color: var(--gray-color);
+            font-size: 1.125rem;
+        }
+
+        .featured-points {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .featured-point {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .featured-point-icon {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .featured-point-text {
+            color: var(--dark-color);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 5rem 0;
+            background-color: var(--light-color);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .about-content {
+            max-width: 500px;
+        }
+
+        .about-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .about-description {
+            color: var(--gray-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-highlight {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .about-highlight-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(29, 171, 149, 0.1);
+            border-radius: 50%;
+            color: var(--secondary-color);
+            flex-shrink: 0;
+        }
+
+        .about-highlight-text {
+            font-size: 0.875rem;
+            color: var(--gray-color);
+        }
+
+        /* Contact Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-description {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: white;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .contact-form button:hover {
+            background-color: #dc2626;
+            transform: translateY(-3px);
+        }
+
+        .contact-form .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-form .form-group {
+            flex: 1;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-align: left;
+            color: white;
+        }
+
+        .contact-success {
+            display: none;
+            background-color: rgba(34, 197, 94, 0.2);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        
+        .modal {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--gray-color);
+            transition: var(--transition);
+        }
+        
+        .modal-close:hover {
+            color: var(--accent-color);
+        }
+        
+        .modal-icon {
+            font-size: 60px;
+            color: var(--success-color);
+            margin-bottom: 20px;
+        }
+        
+        .modal-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .modal-text {
+            margin-bottom: 25px;
+            color: var(--gray-color);
+        }
+        
+        .modal-button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .modal-button:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            padding: 4rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .footer-text {
+            color: var(--light-gray);
+            margin-bottom: 1.5rem;
+            max-width: 300px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: var(--transition);
+        }
+
+        .footer-social-link:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--secondary-color);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--light-gray);
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gray);
+            font-size: 0.875rem;
+        }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--dark-color);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            display: none;
+        }
+
+        .cookie-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cookie-text {
+            margin-right: 1rem;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .cookie-btn {
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .accept-cookies {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .accept-cookies:hover {
+            background-color: #18967f;
+        }
+
+        .reject-cookies {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .reject-cookies:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-container, .featured-wrapper, .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-image-container, .featured-image {
+                order: -1;
+                margin-bottom: 2rem;
+            }
+
+            .featured-badge {
+                right: 20px;
+            }
+
+            .featured-points {
+                align-items: center;
+            }
+
+            .about-content {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .about-highlights {
+                justify-content: center;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+            }
+
+            .cookie-text {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-stat-number {
+                font-size: 1.1rem;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                padding: 2rem;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hero-title, .featured-title, .section-title {
+                font-size: 1.75rem;
+            }
+
+            .referral-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-tagline {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <div class="logo-text">
+                        <span class="logo-name">ShareToSave</span>
+                        <span class="logo-tagline">Tried it. Shared it. Saved it.</span>
+                    </div>
+                </a>
+                <button class="mobile-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#referrals" class="nav-link">Referral Codes</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#featured" class="nav-link">Featured Deal</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Save Money in the UK</span>
+                    <h1 class="hero-title">Exclusive Referral Codes & Personal Recommendations</h1>
+                    <p class="hero-description">Hi, I'm coktay! I share my personal experiences and exclusive referral codes for the best UK services. Join thousands who've already saved with my recommendations.</p>
+                    <div class="hero-cta">
+                        <a href="#referrals" class="btn btn-primary">View Referral Codes</a>
+                        <a href="#about" class="btn btn-outline">About Me</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">100%</span>
+                            <span class="hero-stat-label">Verified Services</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">Trusted</span>
+                            <span class="hero-stat-label">Recommendations</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">Exclusive</span>
+                            <span class="hero-stat-label">UK Deals</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_1280.jpg" alt="UK Savings and Referrals" class="hero-image">
+                    <div class="hero-image-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referral Codes Section -->
+    <section class="referral-section" id="referrals">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Exclusive Savings</span>
+                <h2 class="section-title">My Referral Codes Collection</h2>
+                <p class="section-description">Use these referral links to get discounts and bonuses on services I personally use and recommend. We both benefit when you use these links!</p>
+            </div>
+            
+            <div class="referral-filter">
+                <button class="filter-btn active" data-filter="all">All Categories</button>
+                <button class="filter-btn" data-filter="energy">Energy</button>
+                <button class="filter-btn" data-filter="broadband">Broadband & TV</button>
+                <button class="filter-btn" data-filter="hosting">Web Hosting</button>
+                <!-- Add more filter buttons as you add more categories -->
+            </div>
+            
+            <div class="referral-grid">
+                <!-- Octopus Energy Card -->
+                <div class="referral-card" data-category="energy">
+                    <div class="referral-card-image">
+                        <img src="https://placehold.co/600x400/f5f7fa/2c3e50?text=Octopus+Energy" alt="Octopus Energy">
+                        <span class="referral-card-tag">Energy</span>
+                    </div>
+                    <div class="referral-card-content">
+                        <h3 class="referral-card-title">Octopus Energy</h3>
+                        <div class="referral-card-offer">
+                            <span class="referral-card-offer-icon">🎁</span>
+                            <span class="referral-card-offer-text">£50 Credit When You Switch</span>
+                        </div>
+                        <p class="referral-card-description">Switch to 100% renewable electricity and get £50 credit when you join Octopus Energy using my referral link. I've been with them for 2 years and saved £320 compared to my previous supplier.</p>
+                        <a href="octopus-energy.html" class="btn btn-primary referral-card-btn">Get £50 Credit <span class="affiliate-label">Ad</span></a>
+                    </div>
+                </div>
+                
+                <!-- Virgin Media Card -->
+                <div class="referral-card" data-category="broadband">
+                    <div class="referral-card-image">
+                        <img src="https://placehold.co/600x400/f5f7fa/d30000?text=Virgin+Media" alt="Virgin Media">
+                        <span class="referral-card-tag">Broadband & TV</span>
+                    </div>
+                    <div class="referral-card-content">
+                        <h3 class="referral-card-title">Virgin Media</h3>
+                        <div class="referral-card-offer">
+                            <span class="referral-card-offer-icon">🎁</span>
+                            <span class="referral-card-offer-text">£50 Amazon Voucher</span>
+                        </div>
+                        <p class="referral-card-description">Get a £50 Amazon voucher when you switch to Virgin Media using my referral link. Enjoy ultrafast broadband speeds, premium TV packages, and flexible mobile deals with one of the UK's leading providers.</p>
+                        <a href="virgin-media.html" class="btn btn-primary referral-card-btn">Get £50 Voucher <span class="affiliate-label">Ad</span></a>
+                    </div>
+                </div>
+                
+                <!-- Hostinger Card -->
+                <div class="referral-card" data-category="hosting">
+                    <div class="referral-card-image">
+                        <img src="https://placehold.co/600x400/f5f7fa/673de6?text=Hostinger" alt="Hostinger">
+                        <span class="referral-card-tag">Web Hosting</span>
+                    </div>
+                    <div class="referral-card-content">
+                        <h3 class="referral-card-title">Hostinger</h3>
+                        <div class="referral-card-offer">
+                            <span class="referral-card-offer-icon">🎁</span>
+                            <span class="referral-card-offer-text">Up to 75% Discount + Free Domain</span>
+                        </div>
+                        <p class="referral-card-description">Get up to 75% off Hostinger web hosting plans plus a free domain with my referral link. Perfect for blogs, business websites, and online stores with 24/7 support and a 30-day money-back guarantee.</p>
+                        <a href="hostinger.html" class="btn btn-primary referral-card-btn">Get 75% Off <span class="affiliate-label">Ad</span></a>
+                    </div>
+                </div>
+                
+                <!-- You can add more cards here as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Deal Section -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Featured Deal</span>
+                <h2 class="section-title">This Month's Top Recommendation</h2>
+                <p class="section-description">This is my current top pick for UK consumers looking to save money and get great service</p>
+            </div>
+            
+            <div class="featured-wrapper">
+                <div class="featured-image">
+                    <img src="https://placehold.co/600x400/f5f7fa/00a0dc?text=Octopus+Energy+Lightbulb" alt="Octopus Energy" class="hero-image">
+                    <span class="featured-badge">BEST DEAL</span>
+                </div>
+                <div class="featured-content">
+                    <span class="featured-subtitle">Energy Provider</span>
+                    <h2 class="featured-title">Octopus Energy: £50 Credit + 100% Renewable Electricity</h2>
+                    <p class="featured-description">After trying several energy providers, I've found Octopus Energy to offer the best combination of value, service, and sustainability. Their app is excellent, and customer service is responsive.</p>
+                    
+                    <div class="featured-points">
+                        <div class="featured-point">
+                            <span class="featured-point-icon">✓</span>
+                            <p class="featured-point-text">£50 credit for you (and me) when you switch using my link</p>
+                        </div>
+                        <div class="featured-point">
+                            <span class="featured-point-icon">✓</span>
+                            <p class="featured-point-text">100% renewable electricity as standard</p>
+                        </div>
+                        <div class="featured-point">
+                            <span class="featured-point-icon">✓</span>
+                            <p class="featured-point-text">Award-winning customer service (4.8/5 on Trustpilot)</p>
+                        </div>
+                        <div class="featured-point">
+                            <span class="featured-point-icon">✓</span>
+                            <p class="featured-point-text">Easy-to-use app for submitting readings and tracking usage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta" style="margin-top: 2rem;">
+                        <a href="octopus-energy.html" class="btn btn-primary">Get £50 Credit <span class="affiliate-label">Ad</span></a>
+                        <a href="octopus-energy.html#faq" class="btn btn-outline">Read FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="About coktay" class="hero-image">
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="about-title">Hi, I'm coktay! A UK Savings Enthusiast</h2>
+                    <p class="about-description">I've been living in the UK for 7 years and have become passionate about finding the best deals and services. I created this site to share referral codes that can help you save money on services I personally use and love.</p>
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">✓</span>
+                            <span class="about-highlight-text">UK resident since 2018</span>
+                        </div>
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">✓</span>
+                            <span class="about-highlight-text">Based in London</span>
+                        </div>
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">✓</span>
+                            <span class="about-highlight-text">Personal experience with all services</span>
+                        </div>
+                        <div class="about-highlight">
+                            <span class="about-highlight-icon">✓</span>
+                            <span class="about-highlight-text">Transparency about referrals</span>
+                        </div>
+                    </div>
+                    <p class="about-description">I only recommend services I actually use and believe in. When you use my referral codes, I typically receive a small reward too - it's a win-win! Feel free to contact me if you have any questions about my experiences with these services.</p>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Formspree Integration -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2 class="cta-title">Have Questions About UK Services?</h2>
+            <p class="cta-description">Want to know more about my experience with a particular service or have a suggestion for a new referral code to add? Drop me a message and I'll get back to you!</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+                </div>
+                
+                <!-- Hidden fields for metadata -->
+                <input type="hidden" name="page" value="ShareToSave Contact Form">
+                <input type="hidden" name="user" value="coktay">
+                <input type="hidden" name="timestamp" value="2025-08-11 18:09:31">
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-icon">✓</div>
+            <h3 class="modal-title">Message Sent Successfully!</h3>
+            <p class="modal-text">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <button class="modal-button" onclick="closeModal()">Continue Browsing</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo">ShareToSave</a>
+                    <p class="footer-text">Helping UK residents save money through personal recommendations and exclusive referral codes.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#referrals">Referral Codes</a></li>
+                        <li><a href="#featured">Featured Deal</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Referral Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#referrals">Energy Providers</a></li>
+                        <li><a href="#referrals">Broadband & TV</a></li>
+                        <li><a href="#referrals">Web Hosting</a></li>
+                        <li><a href="#referrals">All Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookies-policy.html">Cookie Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 ShareToSave by coktay. Last updated: 2025-08-11 18:09:31</p>
+                <p>This is a personal blog sharing referral codes. I receive benefits when you use these codes.</p>
+                <p>This website is not affiliated with or endorsed by any of the companies mentioned.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn reject-cookies" id="rejectCookies">Reject</button>
+                <button class="cookie-btn accept-cookies" id="acceptCookies">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            // Category filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const referralCards = document.querySelectorAll('.referral-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide cards based on filter
+                    referralCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Formspree form submission with AJAX
+            const contactForm = document.getElementById('contactForm');
+            const successModal = document.getElementById('successModal');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent default form submission
+                    
+                    // Get the form data
+                    const formData = new FormData(contactForm);
+                    
+                    // Send data to Formspree using fetch API
+                    fetch('https://formspree.io/f/xgvzdwjp', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            // Show success modal
+                            successModal.style.display = 'flex';
+                            // Reset the form
+                            contactForm.reset();
+                        } else {
+                            // Handle errors
+                            response.json().then(data => {
+                                if (Object.hasOwn(data, 'errors')) {
+                                    console.error(data.errors);
+                                    alert("There was a problem submitting your form. Please try again.");
+                                } else {
+                                    // Show success anyway if the error is on Formspree's end
+                                    successModal.style.display = 'flex';
+                                    contactForm.reset();
+                                }
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        // Handle network errors
+                        console.error('Error:', error);
+                        alert("There was a network error. Please try again.");
+                    });
+                });
+            }
+
+            // Cookie banner
+            const cookieBanner = document.getElementById('cookieBanner');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const rejectCookies = document.getElementById('rejectCookies');
+            
+            // Check if user has already made a choice
+            const cookieConsent = localStorage.getItem('cookieConsent');
+            
+            if (!cookieConsent) {
+                // Show the cookie banner after a short delay
+                setTimeout(() => {
+                    cookieBanner.style.display = 'block';
+                }, 1000);
+            }
+            
+            acceptCookies.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieBanner.style.display = 'none';
+                // Here you would initialize analytics, etc.
+            });
+            
+            rejectCookies.addEventListener('click', () => {
+                localStorage.setItem('cookieConsent', 'rejected');
+                cookieBanner.style.display = 'none';
+                // Do not initialize any tracking
+            });
+        });
+        
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
