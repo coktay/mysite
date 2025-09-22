@@ -1,1362 +1,934 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB" itemscope itemtype="https://schema.org/WebPage">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-28FLC05LC2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-28FLC05LC2');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShareToSave | UK Referral Codes & Discounts</title>
-    <meta name="description" content="Get exclusive referral codes and discounts for popular UK services. Save money on energy, broadband, web hosting and more with our personal recommendations.">
-    <style>
-        :root {
-            --primary-color: #2c3e69; /* Dark navy blue */
-            --secondary-color: #1dab95; /* Teal green */
-            --accent-color: #ef4444;
-            --light-accent: #f87171;
-            --success-color: #22c55e;
-            --warning-color: #f59e0b;
-            --dark-color: #2c3e69;
-            --light-color: #f8fafc;
-            --gray-color: #64748b;
-            --light-gray: #e2e8f0;
-            --border-radius: 8px;
-            --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background-color: var(--light-color);
-            color: var(--dark-color);
-            line-height: 1.6;
-            font-size: 16px;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            transition: var(--transition);
-        }
-
-        a:hover {
-            color: var(--primary-color);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: #232f52;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-
-        .btn-secondary:hover {
-            background-color: #18967f;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .btn-accent {
-            background-color: var(--accent-color);
-            color: white;
-        }
-
-        .btn-accent:hover {
-            background-color: #dc2626;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .affiliate-label {
-            display: inline-block;
-            background-color: rgba(0, 0, 0, 0.1);
-            color: var(--dark-color);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-left: 6px;
-            vertical-align: middle;
-        }
-
-        /* Header Styles */
-        .header {
-            background-color: white;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            margin-right: 10px;
-            font-size: 28px;
-            color: var(--secondary-color);
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-name {
-            font-size: 1.5rem;
-            font-weight: 700;
-            line-height: 1.1;
-            color: var(--primary-color);
-        }
-
-        .logo-tagline {
-            font-size: 0.75rem;
-            color: var(--secondary-color);
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 1.5rem;
-        }
-
-        .nav-link {
-            font-weight: 500;
-            color: var(--dark-color);
-            position: relative;
-            padding-bottom: 2px;
-        }
-
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--secondary-color);
-            transition: var(--transition);
-        }
-
-        .nav-link:hover {
-            color: var(--secondary-color);
-        }
-
-        .nav-link:hover:after {
-            width: 100%;
-        }
-
-        .mobile-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--dark-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 5rem 0 3rem;
-            background-color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .hero-content {
-            z-index: 2;
-        }
-
-        .hero-subtitle {
-            color: var(--secondary-color);
-            font-weight: 600;
-            margin-bottom: 1rem;
-            display: inline-block;
-            padding: 0.25rem 1rem;
-            background-color: rgba(29, 171, 149, 0.1);
-            border-radius: 50px;
-        }
-
-        .hero-title {
-            font-size: 2.5rem;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            color: var(--dark-color);
-        }
-
-        .hero-description {
-            color: var(--gray-color);
-            margin-bottom: 2rem;
-            font-size: 1.125rem;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .hero-stat {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .hero-stat-number {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            word-break: break-word;
-        }
-
-        .hero-stat-label {
-            font-size: 0.875rem;
-            color: var(--gray-color);
-        }
-
-        .hero-image-container {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-image {
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            height: auto;
-        }
-
-        .hero-image-bg {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: var(--secondary-color);
-            border-radius: var(--border-radius);
-            top: 20px;
-            left: 20px;
-            z-index: 1;
-        }
-
-        /* Referral Cards Section */
-        .referral-section {
-            padding: 5rem 0;
-            background-color: var(--light-color);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-subtitle {
-            color: var(--secondary-color);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-            padding: 0.25rem 1rem;
-            background-color: rgba(29, 171, 149, 0.1);
-            border-radius: 50px;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-        }
-
-        .section-description {
-            color: var(--gray-color);
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.125rem;
-        }
-
-        .referral-filter {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .filter-btn {
-            padding: 0.5rem 1rem;
-            background-color: white;
-            color: var(--dark-color);
-            border: 1px solid var(--light-gray);
-            border-radius: 50px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .filter-btn:hover, .filter-btn.active {
-            background-color: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
-        }
-
-        .referral-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .referral-card {
-            background-color: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .referral-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .referral-card-image {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .referral-card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .referral-card:hover .referral-card-image img {
-            transform: scale(1.05);
-        }
-
-        .referral-card-tag {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .referral-card-content {
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .referral-card-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--dark-color);
-        }
-
-        .referral-card-description {
-            color: var(--gray-color);
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .referral-card-offer {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            padding: 0.5rem;
-            background-color: rgba(29, 171, 149, 0.1);
-            border-radius: var(--border-radius);
-        }
-
-        .referral-card-offer-icon {
-            color: var(--secondary-color);
-            font-size: 1.25rem;
-        }
-
-        .referral-card-offer-text {
-            font-weight: 600;
-            color: var(--secondary-color);
-            font-size: 0.875rem;
-        }
-
-        .referral-card-btn {
-            margin-top: auto;
-        }
-
-        /* Featured Section */
-        .featured-section {
-            padding: 5rem 0;
-            background-color: white;
-        }
-
-        .featured-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .featured-image {
-            position: relative;
-        }
-
-        .featured-image img {
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            position: relative;
-            z-index: 1;
-        }
-
-        .featured-badge {
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            transform: rotate(5deg);
-            box-shadow: var(--box-shadow);
-            z-index: 2; /* Make sure this is higher than the image */
-        }
-
-        .featured-content {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .featured-subtitle {
-            color: var(--secondary-color);
-            font-weight: 600;
-            font-size: 1.125rem;
-        }
-
-        .featured-title {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--dark-color);
-            line-height: 1.3;
-        }
-
-        .featured-description {
-            color: var(--gray-color);
-            font-size: 1.125rem;
-        }
-
-        .featured-points {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .featured-point {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-        }
-
-        .featured-point-icon {
-            color: var(--secondary-color);
-            font-size: 1.25rem;
-            flex-shrink: 0;
-            margin-top: 0.25rem;
-        }
-
-        .featured-point-text {
-            color: var(--dark-color);
-        }
-
-        /* About Section */
-        .about-section {
-            padding: 5rem 0;
-            background-color: var(--light-color);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about-image {
-            position: relative;
-        }
-
-        .about-image img {
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-        }
-
-        .about-content {
-            max-width: 500px;
-        }
-
-        .about-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--dark-color);
-        }
-
-        .about-description {
-            color: var(--gray-color);
-            margin-bottom: 1.5rem;
-            font-size: 1.125rem;
-        }
-
-        .about-highlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .about-highlight {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .about-highlight-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            background-color: rgba(29, 171, 149, 0.1);
-            border-radius: 50%;
-            color: var(--secondary-color);
-            flex-shrink: 0;
-        }
-
-        .about-highlight-text {
-            font-size: 0.875rem;
-            color: var(--gray-color);
-        }
-
-        /* Contact Section */
-        .cta-section {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-align: center;
-        }
-
-        .cta-title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta-description {
-            font-size: 1.125rem;
-            margin-bottom: 2rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0.9;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px 15px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: var(--border-radius);
-            background-color: white;
-            font-size: 16px;
-        }
-
-        .contact-form textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 16px;
-            transition: var(--transition);
-            display: inline-block;
-        }
-
-        .contact-form button:hover {
-            background-color: #dc2626;
-            transform: translateY(-3px);
-        }
-
-        .contact-form .form-row {
-            display: flex;
-            gap: 20px;
-        }
-
-        .contact-form .form-group {
-            flex: 1;
-            text-align: left;
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            text-align: left;
-            color: white;
-        }
-
-        .contact-success {
-            display: none;
-            background-color: rgba(34, 197, 94, 0.2);
-            padding: 15px;
-            border-radius: var(--border-radius);
-            margin-top: 20px;
-            font-weight: 500;
-        }
-
-        /* Modal Styles */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-        }
-        
-        .modal {
-            background-color: white;
-            padding: 30px;
-            border-radius: var(--border-radius);
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .modal-close {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            font-size: 24px;
-            cursor: pointer;
-            color: var(--gray-color);
-            transition: var(--transition);
-        }
-        
-        .modal-close:hover {
-            color: var(--accent-color);
-        }
-        
-        .modal-icon {
-            font-size: 60px;
-            color: var(--success-color);
-            margin-bottom: 20px;
-        }
-        
-        .modal-title {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: var(--dark-color);
-        }
-        
-        .modal-text {
-            margin-bottom: 25px;
-            color: var(--gray-color);
-        }
-        
-        .modal-button {
-            background-color: var(--secondary-color);
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            font-weight: 600;
-            transition: var(--transition);
-        }
-        
-        .modal-button:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--dark-color);
-            color: var(--light-color);
-            padding: 4rem 0 1rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-logo {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-
-        .footer-text {
-            color: var(--light-gray);
-            margin-bottom: 1.5rem;
-            max-width: 300px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .footer-social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            transition: var(--transition);
-        }
-
-        .footer-social-link:hover {
-            background-color: var(--secondary-color);
-            color: white;
-            transform: translateY(-3px);
-        }
-
-        .footer-column h3 {
-            color: white;
-            font-size: 1.125rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        .footer-column h3:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 30px;
-            height: 2px;
-            background-color: var(--secondary-color);
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.75rem;
-        }
-
-        .footer-links a {
-            color: var(--light-gray);
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: white;
-            padding-left: 5px;
-        }
-
-        .footer-copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--light-gray);
-            font-size: 0.875rem;
-        }
-
-        /* Cookie Banner */
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--dark-color);
-            color: white;
-            padding: 1rem;
-            z-index: 1000;
-            display: none;
-        }
-
-        .cookie-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .cookie-text {
-            margin-right: 1rem;
-        }
-
-        .cookie-buttons {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .cookie-btn {
-            padding: 0.5rem 1rem;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-        }
-
-        .accept-cookies {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-
-        .accept-cookies:hover {
-            background-color: #18967f;
-        }
-
-        .reject-cookies {
-            background-color: transparent;
-            color: white;
-            border: 1px solid white;
-        }
-
-        .reject-cookies:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .hero-container, .featured-wrapper, .about-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
+    <title>Switch to Octopus Energy - Get £50 Credit + 100% Renewable Electricity | ShareToSave.co.uk</title>
+    <meta name="description" content="Switch to Octopus Energy with our exclusive referral link and get £50 credit. Join thousands saving with 100% renewable electricity and award-winning service. Free switching with no fees.">
+    <meta name="keywords" content="Octopus Energy, energy switch, renewable energy, £50 credit, energy supplier, green energy, UK energy, energy referral, switch energy supplier, best energy company UK, cheap energy bills, green electricity, smart meter, energy switching, Octopus Energy referral, energy comparison, renewable electricity UK, energy savings, energy switching process, Octopus Energy tariffs, energy supplier comparison, green energy supplier, energy switching guide, energy bill savings, renewable energy supplier, energy switching tips, Octopus Energy review, energy switching FAQ, energy supplier switch, green energy UK, energy switching benefits, sharetosave, share to save, energy switching UK, best energy deals, green energy supplier UK, renewable electricity supplier, energy switching service">
+    <meta name="author" content="ShareToSave.co.uk">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="en-GB">
+    <meta name="revisit-after" content="3 days">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="geo.region" content="GB">
+    <meta name="geo.country" content="United Kingdom">
+    <meta name="geo.placename" content="United Kingdom">
+    <meta name="ICBM" content="54.7024, -3.2766">
+    <meta name="DC.title" content="Switch to Octopus Energy - Get £50 Credit + 100% Renewable Electricity">
+    <meta name="DC.description" content="Switch to Octopus Energy with our exclusive referral link and get £50 credit. Join thousands saving with 100% renewable electricity and award-winning service.">
+    <meta name="DC.subject" content="Energy Switching, Renewable Energy, Octopus Energy, Green Energy">
+    <meta name="DC.creator" content="ShareToSave.co.uk">
+    <meta name="DC.publisher" content="ShareToSave.co.uk">
+    <meta name="DC.date" content="2025-01-11">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.identifier" content="https://sharetosave.co.uk">
+    <meta name="DC.language" content="en-GB">
+    <meta name="DC.coverage" content="United Kingdom">
+    <meta name="DC.rights" content="© 2025 ShareToSave.co.uk">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ShareToSave">
+    <meta name="application-name" content="ShareToSave.co.uk">
+    <meta name="msapplication-tooltip" content="Switch to Octopus Energy and get £50 credit">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="msapplication-navbutton-color" content="#00B4D8">
+    <meta name="msapplication-TileColor" content="#00B4D8">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta http-equiv="Expires" content="31536000">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Switch to Octopus Energy - Get £50 Credit + 100% Renewable Electricity | ShareToSave.co.uk">
+    <meta property="og:description" content="Switch to Octopus Energy with our exclusive referral link and get £50 credit. Join thousands saving with 100% renewable electricity and award-winning service. Free switching with no fees.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sharetosave.co.uk">
+    <meta property="og:image" content="https://sharetosave.co.uk/images/octopus-energy-switch-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Switch to Octopus Energy and get £50 credit with 100% renewable electricity">
+    <meta property="og:site_name" content="ShareToSave.co.uk">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:updated_time" content="2025-01-11T00:00:00Z">
+    <meta property="article:author" content="ShareToSave.co.uk">
+    <meta property="article:section" content="Energy Switching">
+    <meta property="article:tag" content="Octopus Energy, Energy Switching, Renewable Energy, Green Energy">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Switch to Octopus Energy - Get £50 Credit + 100% Renewable Electricity | ShareToSave.co.uk">
+    <meta name="twitter:description" content="Switch to Octopus Energy with our exclusive referral link and get £50 credit. Join thousands saving with 100% renewable electricity and award-winning service. Free switching with no fees.">
+    <meta name="twitter:image" content="https://sharetosave.co.uk/images/octopus-energy-switch-twitter.jpg">
+    <meta name="twitter:image:alt" content="Switch to Octopus Energy and get £50 credit with 100% renewable electricity">
+    <meta name="twitter:site" content="@ShareToSaveUK">
+    <meta name="twitter:creator" content="@ShareToSaveUK">
+    <meta name="twitter:domain" content="sharetosave.co.uk">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sharetosave.co.uk">
+    
+    <!-- Alternate Language Versions -->
+    <link rel="alternate" hreflang="en-gb" href="https://sharetosave.co.uk">
+    <link rel="alternate" hreflang="en" href="https://sharetosave.co.uk">
+    <link rel="alternate" hreflang="x-default" href="https://sharetosave.co.uk">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#00B4D8">
+    <meta name="msapplication-TileColor" content="#00B4D8">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://share.octopus.energy">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//share.octopus.energy">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="ShareToSave.co.uk RSS Feed" href="/feed.xml">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ShareToSave.co.uk - Octopus Energy Switch",
+        "alternateName": "ShareToSave",
+        "url": "https://sharetosave.co.uk",
+        "description": "Switch to Octopus Energy with our exclusive referral link and get £50 credit. Join thousands saving with 100% renewable electricity and award-winning service.",
+        "inLanguage": "en-GB",
+        "copyrightYear": "2025",
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "ShareToSave.co.uk"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://sharetosave.co.uk/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "sameAs": [
+            "https://twitter.com/ShareToSaveUK",
+            "https://www.facebook.com/ShareToSaveUK"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ShareToSave.co.uk",
+        "alternateName": "ShareToSave",
+        "url": "https://sharetosave.co.uk",
+        "logo": "https://sharetosave.co.uk/images/logo.png",
+        "description": "Helping UK residents switch to Octopus Energy and get £50 credit through our exclusive referral link.",
+        "foundingDate": "2025",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": "English",
+            "areaServed": "GB"
+        },
+        "sameAs": [
+            "https://twitter.com/ShareToSaveUK",
+            "https://www.facebook.com/ShareToSaveUK"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Octopus Energy Switch Service",
+        "description": "Switch to Octopus Energy and get £50 credit with 100% renewable electricity",
+        "category": "Energy Services",
+        "brand": {
+            "@type": "Brand",
+            "name": "Octopus Energy"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP",
+            "description": "£50 credit bonus when switching to Octopus Energy",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2025-01-11",
+            "seller": {
+                "@type": "Organization",
+                "name": "ShareToSave.co.uk"
             }
-
-            .hero-stats {
-                justify-content: center;
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "200000",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "name": "Switching Time",
+                "value": "21 days"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Renewable Energy",
+                "value": "100%"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Credit Bonus",
+                "value": "£50"
             }
-
-            .hero-image-container, .featured-image {
-                order: -1;
-                margin-bottom: 2rem;
-            }
-
-            .featured-badge {
-                right: 20px;
-            }
-
-            .featured-points {
-                align-items: center;
-            }
-
-            .about-content {
-                max-width: 100%;
-                text-align: center;
-            }
-
-            .about-highlights {
-                justify-content: center;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .cookie-content {
-                flex-direction: column;
-            }
-
-            .cookie-text {
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
+        ]
+    }
+    </script>
+    
+    <!-- Additional Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Energy Switching Service",
+        "description": "Professional energy switching service to help UK residents switch to Octopus Energy and receive £50 credit",
+        "provider": {
+            "@type": "Organization",
+            "name": "ShareToSave.co.uk",
+            "url": "https://sharetosave.co.uk"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "United Kingdom"
+        },
+        "serviceType": "Energy Switching",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "GBP",
+            "description": "Free energy switching service with £50 credit bonus"
         }
-
-        @media (max-width: 768px) {
-            .hero-stat-number {
-                font-size: 1.1rem;
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I get the £50 credit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply use our exclusive referral link to switch to Octopus Energy. The £50 credit will be automatically added to your account within 7 days of completing your switch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does the switching process take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The switching process typically takes 2-3 weeks from start to finish. Octopus Energy will handle all the paperwork and coordinate with your current supplier."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Octopus Energy really 100% renewable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! All of Octopus Energy's electricity comes from renewable sources including wind, solar, and hydro power. They're certified by the Green Energy Supply Certification Scheme."
+                }
             }
-            
-            .mobile-toggle {
-                display: block;
-            }
-
-            .nav-menu {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                flex-direction: column;
-                background-color: white;
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-                padding: 2rem;
-            }
-
-            .nav-menu.active {
-                left: 0;
-            }
-
-            .hero-title, .featured-title, .section-title {
-                font-size: 1.75rem;
-            }
-
-            .referral-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-form .form-row {
-                flex-direction: column;
-                gap: 0;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .logo-tagline {
-                display: none;
-            }
-        }
-    </style>
+        ]
+    }
+    </script>
+    
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ShareToSave.co.uk",
+        "description": "Energy switching service helping UK residents switch to Octopus Energy",
+        "url": "https://sharetosave.co.uk",
+        "telephone": "+44-800-000-0000",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "54.7024",
+            "longitude": "-3.2766"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "priceRange": "Free",
+        "currenciesAccepted": "GBP",
+        "paymentAccepted": "Free Service"
+    }
+    </script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="navbar">
-                <a href="/" class="logo">
-                    <span class="logo-icon">⚡</span>
-                    <div class="logo-text">
-                        <span class="logo-name">ShareToSave</span>
-                        <span class="logo-tagline">Tried it. Shared it. Saved it.</span>
-                    </div>
-                </a>
-                <button class="mobile-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                </button>
+    <header class="header" role="banner">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-icon">⚡</div>
+                    <h1>ShareToSave.co.uk</h1>
+                </div>
                 <ul class="nav-menu">
-                    <li><a href="#referrals" class="nav-link">Referral Codes</a></li>
-                    <li><a href="#about" class="nav-link">About Me</a></li>
-                    <li><a href="#featured" class="nav-link">Featured Deal</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#benefits" class="nav-link">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#how-it-works" class="nav-link">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
                 </ul>
+                <div class="nav-actions">
+                    <a href="https://share.octopus.energy/rainy-toffee-775" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Switch Now</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <span class="hero-subtitle">Save Money in the UK</span>
-                    <h1 class="hero-title">Exclusive Referral Codes & Personal Recommendations</h1>
-                    <p class="hero-description">Hi, I'm Jonathan! I share my personal experiences and exclusive referral codes for the best UK services. Join thousands who've already saved with my recommendations.</p>
-                    <div class="hero-cta">
-                        <a href="#referrals" class="btn btn-primary">View Referral Codes</a>
-                        <a href="#about" class="btn btn-outline">About Me</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">100%</span>
-                            <span class="hero-stat-label">Verified Services</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">Trusted</span>
-                            <span class="hero-stat-label">Recommendations</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-number">Exclusive</span>
-                            <span class="hero-stat-label">UK Deals</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image-container">
-                    <img src="https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_1280.jpg" alt="UK Savings and Referrals" class="hero-image">
-                    <div class="hero-image-bg"></div>
-                </div>
+    <section class="hero" role="main">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
         </div>
-    </section>
-
-    <!-- Referral Codes Section -->
-    <section class="referral-section" id="referrals">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Exclusive Savings</span>
-                <h2 class="section-title">My Referral Codes Collection</h2>
-                <p class="section-description">Use these referral links to get discounts and bonuses on services I personally use and recommend. We both benefit when you use these links!</p>
-            </div>
-            
-            <div class="referral-filter">
-                <button class="filter-btn active" data-filter="all">All Categories</button>
-                <button class="filter-btn" data-filter="energy">Energy</button>
-                <button class="filter-btn" data-filter="broadband">Broadband & TV</button>
-                <button class="filter-btn" data-filter="hosting">Web Hosting</button>
-                <!-- Add more filter buttons as you add more categories -->
-            </div>
-            
-            <div class="referral-grid">
-                <!-- Octopus Energy Card -->
-                <div class="referral-card" data-category="energy">
-                    <div class="referral-card-image">
-                        <img src="https://placehold.co/600x400/f5f7fa/2c3e50?text=Octopus+Energy" alt="Octopus Energy">
-                        <span class="referral-card-tag">Energy</span>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Trusted by 3.5 Million+ Customers</span>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">£50</span>
+                        <span class="stat-label">Credit Bonus</span>
                     </div>
-                    <div class="referral-card-content">
-                        <h3 class="referral-card-title">Octopus Energy</h3>
-                        <div class="referral-card-offer">
-                            <span class="referral-card-offer-icon">🎁</span>
-                            <span class="referral-card-offer-text">£50 Credit When You Switch</span>
-                        </div>
-                        <p class="referral-card-description">Switch to 100% renewable electricity and get £50 credit when you join Octopus Energy using my referral link. I've been with them for 2 years and saved £320 compared to my previous supplier.</p>
-                        <a href="octopus-energy.html" class="btn btn-primary referral-card-btn">Get £50 Credit <span class="affiliate-label">Ad</span></a>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Renewable Energy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.8/5</span>
+                        <span class="stat-label">Trustpilot Rating</span>
                     </div>
                 </div>
-                
-                <!-- Virgin Media Card -->
-                <div class="referral-card" data-category="broadband">
-                    <div class="referral-card-image">
-                        <img src="https://placehold.co/600x400/f5f7fa/d30000?text=Virgin+Media" alt="Virgin Media">
-                        <span class="referral-card-tag">Broadband & TV</span>
+                <h2>Switch to Octopus Energy</h2>
+                <h3>Get £50 Credit + 100% Renewable Electricity</h3>
+                <p>Join the UK's most awarded energy supplier and get £50 credit when you switch using our exclusive referral link. I've been with Octopus for 2 years and saved £320 compared to my previous supplier. <strong>Switch today and start saving on your energy bills with 100% renewable electricity.</strong></p>
+                <div class="hero-buttons">
+                    <a href="https://share.octopus.energy/rainy-toffee-775" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        <span>Get £50 Credit Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#benefits" class="btn btn-outline btn-large">
+                        <span>Learn More</span>
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Renewable</span>
                     </div>
-                    <div class="referral-card-content">
-                        <h3 class="referral-card-title">Virgin Media</h3>
-                        <div class="referral-card-offer">
-                            <span class="referral-card-offer-icon">🎁</span>
-                            <span class="referral-card-offer-text">£50 Amazon Voucher</span>
-                        </div>
-                        <p class="referral-card-description">Get a £50 Amazon voucher when you switch to Virgin Media using my referral link. Enjoy ultrafast broadband speeds, premium TV packages, and flexible mobile deals with one of the UK's leading providers.</p>
-                        <a href="virgin-media.html" class="btn btn-primary referral-card-btn">Get £50 Voucher <span class="affiliate-label">Ad</span></a>
+                    <div class="feature-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.8/5 Trustpilot</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Easy App</span>
                     </div>
                 </div>
-                
-                <!-- Hostinger Card -->
-                <div class="referral-card" data-category="hosting">
-                    <div class="referral-card-image">
-                        <img src="https://placehold.co/600x400/f5f7fa/673de6?text=Hostinger" alt="Hostinger">
-                        <span class="referral-card-tag">Web Hosting</span>
-                    </div>
-                    <div class="referral-card-content">
-                        <h3 class="referral-card-title">Hostinger</h3>
-                        <div class="referral-card-offer">
-                            <span class="referral-card-offer-icon">🎁</span>
-                            <span class="referral-card-offer-text">Up to 75% Discount + Free Domain</span>
-                        </div>
-                        <p class="referral-card-description">Get up to 75% off Hostinger web hosting plans plus a free domain with my referral link. Perfect for blogs, business websites, and online stores with 24/7 support and a 30-day money-back guarantee.</p>
-                        <a href="hostinger.html" class="btn btn-primary referral-card-btn">Get 75% Off <span class="affiliate-label">Ad</span></a>
-                    </div>
-                </div>
-                
-                <!-- You can add more cards here as needed -->
             </div>
-        </div>
-    </section>
-
-    <!-- Featured Deal Section -->
-    <section class="featured-section" id="featured">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Featured Deal</span>
-                <h2 class="section-title">This Month's Top Recommendation</h2>
-                <p class="section-description">This is my current top pick for UK consumers looking to save money and get great service</p>
-            </div>
-            
-            <div class="featured-wrapper">
-                <div class="featured-image">
-                    <img src="https://placehold.co/600x400/f5f7fa/00a0dc?text=Octopus+Energy+Lightbulb" alt="Octopus Energy" class="hero-image">
-                    <span class="featured-badge">BEST DEAL</span>
-                </div>
-                <div class="featured-content">
-                    <span class="featured-subtitle">Energy Provider</span>
-                    <h2 class="featured-title">Octopus Energy: £50 Credit + 100% Renewable Electricity</h2>
-                    <p class="featured-description">After trying several energy providers, I've found Octopus Energy to offer the best combination of value, service, and sustainability. Their app is excellent, and customer service is responsive.</p>
+            <div class="hero-visual">
+                <div class="offer-card">
+                    <!-- Energy Badge -->
+                    <div class="energy-badge">Energy</div>
                     
-                    <div class="featured-points">
-                        <div class="featured-point">
-                            <span class="featured-point-icon">✓</span>
-                            <p class="featured-point-text">£50 credit for you (and me) when you switch using my link</p>
+                    <!-- Main Heading -->
+                    <h2 class="offer-heading">£50 Credit When You Switch</h2>
+                    
+                    <!-- Referral Link Section -->
+                    <div class="referral-section">
+                        <p class="referral-text">Use this referral link to claim your reward:</p>
+                        <div class="referral-link-container">
+                            <div class="referral-link-box">
+                                <span class="referral-url">https://share.octopus.energy/rainy-toffee-775</span>
+                            </div>
+                            <button class="copy-button" onclick="copyReferralLink()">Copy</button>
                         </div>
-                        <div class="featured-point">
-                            <span class="featured-point-icon">✓</span>
-                            <p class="featured-point-text">100% renewable electricity as standard</p>
-                        </div>
-                        <div class="featured-point">
-                            <span class="featured-point-icon">✓</span>
-                            <p class="featured-point-text">Award-winning customer service (4.8/5 on Trustpilot)</p>
-                        </div>
-                        <div class="featured-point">
-                            <span class="featured-point-icon">✓</span>
-                            <p class="featured-point-text">Easy-to-use app for submitting readings and tracking usage</p>
+                        <div class="copy-message" id="copyMessage">
+                            <i class="fas fa-check"></i>
+                            Copied Successfully!
                         </div>
                     </div>
                     
-                    <div class="hero-cta" style="margin-top: 2rem;">
-                        <a href="octopus-energy.html" class="btn btn-primary">Get £50 Credit <span class="affiliate-label">Ad</span></a>
-                        <a href="octopus-energy.html#faq" class="btn btn-outline">Read FAQ</a>
+                    <!-- Call to Action Button -->
+                    <div class="cta-section">
+                        <a href="https://share.octopus.energy/rainy-toffee-775" class="cta-button" target="_blank" rel="noopener noreferrer">
+                            <span>Switch Now & Claim £50</span>
+                            <div class="ad-badge">Ad</div>
+                        </a>
+                    </div>
+                    
+                    <!-- Affiliate Disclosure -->
+                    <div class="affiliate-disclosure">
+                        <p><strong>Affiliate Disclosure:</strong></p>
+                        <p>We'll also receive a £50 reward if you use this link. This is in accordance with Octopus Energy's referral program.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits" aria-labelledby="benefits-heading">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="About jonathan" class="hero-image">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Why Choose Octopus</span>
                 </div>
-                <div class="about-content">
-                    <span class="section-subtitle">About Me</span>
-                    <h2 class="about-title">Hi, I'm jonathan! A UK Savings Enthusiast</h2>
-                    <p class="about-description">I've been living in the UK for 7 years and have become passionate about finding the best deals and services. I created this site to share referral codes that can help you save money on services I personally use and love.</p>
-                    <div class="about-highlights">
-                        <div class="about-highlight">
-                            <span class="about-highlight-icon">✓</span>
-                            <span class="about-highlight-text">UK resident</span>
-                        </div>
-                        <div class="about-highlight">
-                            <span class="about-highlight-icon">✓</span>
-                            <span class="about-highlight-text">Based in London</span>
-                        </div>
-                        <div class="about-highlight">
-                            <span class="about-highlight-icon">✓</span>
-                            <span class="about-highlight-text">Personal experience with all services</span>
-                        </div>
-                        <div class="about-highlight">
-                            <span class="about-highlight-icon">✓</span>
-                            <span class="about-highlight-text">Transparency about referrals</span>
-                        </div>
-                    </div>
-                    <p class="about-description">I only recommend services I actually use and believe in. When you use my referral codes, I typically receive a small reward too - it's a win-win! Feel free to contact me if you have any questions about my experiences with these services.</p>
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                </div>
+                <h2 id="benefits-heading">Why Switch to Octopus Energy?</h2>
+                <p>Discover the benefits that make Octopus Energy the UK's most awarded energy supplier</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section with Formspree Integration -->
-    <section class="cta-section" id="contact">
-        <div class="container">
-            <h2 class="cta-title">Have Questions About UK Services?</h2>
-            <p class="cta-description">Want to know more about my experience with a particular service or have a suggestion for a new referral code to add? Drop me a message and I'll get back to you!</p>
             
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <div class="benefits-grid">
+                <div class="benefit-card featured">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gift"></i>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <h3>£50 Credit Bonus</h3>
+                    <p>Get £50 credit added to your account when you switch using our exclusive referral link. No strings attached!</p>
+                    <div class="benefit-highlight">Exclusive Offer</div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
                     </div>
+                    <h3>100% Renewable Energy</h3>
+                    <p>All electricity comes from renewable sources including wind, solar, and hydro power. Help fight climate change.</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Award-Winning Service</h3>
+                    <p>Rated 4.8/5 on Trustpilot with over 200,000 reviews. Winner of multiple energy supplier awards.</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Smart App & Technology</h3>
+                    <p>Easy-to-use app for submitting meter readings, tracking usage, and managing your account 24/7.</p>
                 </div>
-                
-                <!-- Hidden fields for metadata -->
-                <input type="hidden" name="page" value="ShareToSave Contact Form">
-                <input type="hidden" name="user" value="jonathan">
-                <input type="hidden" name="timestamp" value="2025-08-11 18:09:31">
-                
-                <button type="submit">Send Message</button>
-            </form>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-pound-sign"></i>
+                    </div>
+                    <h3>Competitive Prices</h3>
+                    <p>Great value tariffs with transparent pricing. No hidden fees or surprise charges.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Excellent Customer Support</h3>
+                    <p>Friendly, knowledgeable UK-based customer service team available via phone, email, and chat.</p>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <!-- Success Modal -->
-    <div class="modal-overlay" id="successModal">
-        <div class="modal">
-            <span class="modal-close" onclick="closeModal()">&times;</span>
-            <div class="modal-icon">✓</div>
-            <h3 class="modal-title">Message Sent Successfully!</h3>
-            <p class="modal-text">Thank you for reaching out. I'll get back to you as soon as possible.</p>
-            <button class="modal-button" onclick="closeModal()">Continue Browsing</button>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works" aria-labelledby="how-it-works-heading">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-cogs"></i>
+                    <span>Simple Process</span>
+                </div>
+                <h2 id="how-it-works-heading">How to Switch to Octopus Energy</h2>
+                <p>Switching to Octopus Energy is quick and easy. Follow these simple steps to get your £50 credit</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Click Our Referral Link</h3>
+                        <p>Use our exclusive referral link to start your switch to Octopus Energy. This ensures you get the £50 credit bonus.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Enter Your Details</h3>
+                        <p>Provide your current energy details, address, and contact information. The process takes just a few minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Choose Your Tariff</h3>
+                        <p>Select the Octopus Energy tariff that best suits your needs. All tariffs include 100% renewable electricity.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Get Your £50 Credit</h3>
+                        <p>Once your switch is complete, £50 will be added to your Octopus Energy account automatically.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="switch-cta">
+                <h3>Ready to Switch?</h3>
+                <p>Join over 3.5 million customers who have already made the switch to Octopus Energy</p>
+                <div class="cta-benefits">
+                    <div class="cta-benefit">
+                        <i class="fas fa-clock"></i>
+                        <span>Switch in 21 days</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>No exit fees</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% renewable</span>
+                    </div>
+                </div>
+                <a href="https://share.octopus.energy/rainy-toffee-775" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                    <span>Switch Now & Get £50 Credit</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
+
+
+    <!-- Switch CTA Section -->
+    <section id="switch" class="switch-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Switch to Octopus Energy?</h2>
+                    <p>Join over 3.5 million customers and get your £50 credit today. The switch takes just a few minutes and you'll be helping the environment too!</p>
+                    
+                    <div class="cta-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>£50 credit bonus</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>100% renewable energy</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>4.8/5 customer rating</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Easy switching process</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-action">
+                    <a href="https://share.octopus.energy/rainy-toffee-775" class="btn btn-primary btn-large cta-button" target="_blank" rel="noopener noreferrer">
+                        <span>Switch Now & Get £50 Credit</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <p class="cta-note">*Credit will be added to your account within 7 days of switching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Frequently Asked</span>
+                </div>
+                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <p>Everything you need to know about switching to Octopus Energy with our referral link</p>
+            </div>
+            
+            <div class="affiliate-disclosure">
+                <div class="disclosure-badge">#Ad | Affiliate Link</div>
+                <p><strong>Affiliate Disclosure:</strong> We'll also receive a £50 reward if you use this link. This is in accordance with Octopus Energy's referral program.</p>
+                
+                <div class="referral-link-section">
+                    <h3>📋 Copy Referral Link</h3>
+                    <p>Prefer to copy the link? Use this referral code:</p>
+                    <div class="referral-link-container">
+                        <input type="text" id="referralLink" value="https://share.octopus.energy/rainy-toffee-775" readonly class="referral-input">
+                        <button id="copyButton" class="copy-button">
+                            <i class="fas fa-copy"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <div id="copySuccess" class="copy-success">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Copied Successfully!</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I get the £50 credit?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply use our exclusive referral link to switch to Octopus Energy. The £50 credit will be automatically added to your account within 7 days of completing your switch. <a href="https://share.octopus.energy/rainy-toffee-775" target="_blank" rel="noopener noreferrer">Click here to start your switch</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does the switching process take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The switching process typically takes 2-3 weeks from start to finish. Octopus Energy will handle all the paperwork and coordinate with your current supplier.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is Octopus Energy really 100% renewable?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All of Octopus Energy's electricity comes from renewable sources including wind, solar, and hydro power. They're certified by the Green Energy Supply Certification Scheme.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I'm not happy with Octopus Energy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Octopus Energy offers a 14-day cooling-off period after your switch. If you're not satisfied, you can switch back to your previous supplier without any exit fees.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to pay any switching fees?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! There are no switching fees when you move to Octopus Energy. The switch is completely free, and you'll even get £50 credit as a bonus.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I use the Octopus Energy app?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! The Octopus Energy app is available for both iOS and Android. You can submit meter readings, track usage, view bills, and contact customer service all from your phone.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to switch to Octopus Energy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The switching process typically takes 21 days, which is the standard across the industry. Octopus will handle all communications with your current supplier, so you don't need to contact them yourself. The process starts with a cooling-off period, followed by the actual switch date when Octopus takes over your supply.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When will I receive my £50 referral credit?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The £50 credit is typically applied to your Octopus Energy account within 3-4 weeks after your switch is complete. You'll see it clearly marked on your account dashboard and it will be used to offset your energy costs. Both you and the person who referred you will receive the £50 credit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to get a new meter installed?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, you don't need a new meter to switch to Octopus Energy. They can work with your existing standard or smart meter. If you'd like to upgrade to a smart meter, Octopus offers free smart meter installations once you're a customer. Smart meters allow for automatic readings and better tracking of your energy usage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Will there be any interruption to my energy supply?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, there will be no interruption to your gas or electricity supply when you switch. The energy still comes through the same pipes and wires, only the company billing you changes. You'll continue to receive gas and electricity without any disruption during the switching process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a fee for cancelling my current contract?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This depends on your current supplier and whether you're in a fixed-term contract with exit fees. Check your current energy contract or contact your supplier to confirm. Many find that even with exit fees, the switch to Octopus still saves money in the long run, especially with the £50 referral credit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Which tariff should I choose with Octopus Energy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Octopus offers several tariffs to suit different needs. Their Flexible Octopus is a variable rate tariff with no exit fees. If you prefer price certainty, Fixed Octopus gives you locked-in rates. For EV owners, Octopus Go offers cheap overnight electricity. If you're tech-savvy, Agile Octopus provides dynamic pricing that changes every half hour.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <div class="contact-header">
+                <h2 id="contact-heading">Have Questions About Octopus Energy?</h2>
+                <p>Want to know more about switching or have questions about the £50 credit? Drop me a message and I'll get back to you!</p>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message here..." rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="send-button">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Content Section -->
+    <section class="seo-content">
+        <div class="container">
+            <div class="seo-header">
+                <h2>Complete Guide to Switching to Octopus Energy in the UK</h2>
+                <p>Everything you need to know about switching to Octopus Energy, from benefits to the switching process</p>
+            </div>
+            
+            <div class="seo-section">
+                <div class="seo-text">
+                    <p class="seo-preview">When considering an energy supplier switch, Octopus Energy consistently ranks as the best energy company UK residents can choose. Their innovative approach to energy supply, combined with competitive energy tariffs and transparent pricing, makes them stand out in the crowded UK energy market. The energy switching process with Octopus is designed to be seamless, taking just 21 days from start to finish. One of the most compelling reasons to switch to Octopus Energy is their referral program, which offers £50 credit to both the referrer and the new customer. This energy switching bonus makes the transition even more attractive, especially when combined with their already competitive energy prices. Many customers report saving hundreds of pounds annually compared to their previous energy supplier. The company has built a strong reputation for customer satisfaction, consistently receiving high ratings on review platforms and winning multiple industry awards for their service excellence. Octopus Energy's commitment to 100% renewable electricity sets them apart from traditional energy suppliers. All their electricity comes from renewable sources including wind farms, solar panels, and hydroelectric power stations across the UK. This green energy approach not only helps reduce your carbon footprint but also supports the UK's transition to a more sustainable energy future. Their renewable energy tariffs are competitively priced, proving that choosing green energy doesn't have to mean higher energy bills. In fact, many customers find that switching to Octopus Energy results in lower monthly energy costs while contributing to environmental sustainability. The company invests heavily in renewable energy infrastructure and supports local communities through their green energy initiatives.</p>
+                    
+                    <div class="seo-full" style="display: none;">
+                        <p>When considering an energy supplier switch, Octopus Energy consistently ranks as the best energy company UK residents can choose. Their innovative approach to energy supply, combined with competitive energy tariffs and transparent pricing, makes them stand out in the crowded UK energy market. The energy switching process with Octopus is designed to be seamless, taking just 21 days from start to finish. One of the most compelling reasons to switch to Octopus Energy is their referral program, which offers £50 credit to both the referrer and the new customer. This energy switching bonus makes the transition even more attractive, especially when combined with their already competitive energy prices. Many customers report saving hundreds of pounds annually compared to their previous energy supplier. The company has built a strong reputation for customer satisfaction, consistently receiving high ratings on review platforms and winning multiple industry awards for their service excellence. Their commitment to renewable energy and innovative technology solutions makes them a forward-thinking choice for environmentally conscious consumers.</p>
+                        
+                        <p>Octopus Energy's commitment to 100% renewable electricity sets them apart from traditional energy suppliers. All their electricity comes from renewable sources including wind farms, solar panels, and hydroelectric power stations across the UK. This green energy approach not only helps reduce your carbon footprint but also supports the UK's transition to a more sustainable energy future. Their renewable energy tariffs are competitively priced, proving that choosing green energy doesn't have to mean higher energy bills. In fact, many customers find that switching to Octopus Energy results in lower monthly energy costs while contributing to environmental sustainability. The company invests heavily in renewable energy infrastructure and supports local communities through their green energy initiatives. They also offer innovative tariffs like Agile Octopus that allow customers to benefit from real-time renewable energy pricing.</p>
+                        
+                        <p>The energy switching process in the UK is regulated and designed to protect consumers. When you switch to Octopus Energy, the entire process is handled automatically. Your current energy supplier will be notified, and Octopus Energy will coordinate the switch date, typically within 21 days. There's no interruption to your energy supply during this transition. During the energy switching process, you'll receive regular updates about your switch progress. Octopus Energy's customer service team is available to answer any questions you might have about your energy switch, making the experience as smooth as possible. The process includes a 14-day cooling-off period where you can change your mind without any penalties. They handle all the paperwork and communication with your previous supplier, ensuring a hassle-free transition to your new energy provider.</p>
+                        
+                        <p>Octopus Energy offers several energy tariffs to suit different household needs. Their Flexible Octopus tariff provides variable rates with no exit fees, giving you the freedom to switch again if better deals become available. For those who prefer price certainty, their Fixed Octopus tariff locks in rates for a specified period. For electric vehicle owners, Octopus Go offers special overnight electricity rates that can significantly reduce charging costs. Their Agile Octopus tariff provides dynamic pricing that changes every half hour, allowing tech-savvy customers to optimize their energy usage and costs. All tariffs include 100% renewable electricity and excellent customer service. They also offer specialized tariffs for heat pumps and other renewable technologies, making them a comprehensive choice for sustainable living.</p>
+                        
+                        <p>Octopus Energy has built a reputation for exceptional customer service, consistently receiving high ratings on Trustpilot and other review platforms. Their UK-based customer service team is knowledgeable, friendly, and available through multiple channels including phone, email, and live chat. The Octopus Energy app makes managing your account incredibly easy. You can submit meter readings, track your energy usage, view bills, and contact customer service all from your mobile device. This digital-first approach has made them a favorite among customers who value convenience and modern technology. Their customer service team is available 24/7 for urgent matters. They also offer proactive communication, keeping customers informed about their energy usage and providing tips for reducing consumption and costs.</p>
+                        
+                        <p>Octopus Energy encourages the use of smart meters to help customers better understand and manage their energy consumption. Smart meters provide real-time energy usage data, helping you identify ways to reduce your energy bills and environmental impact. If you don't already have a smart meter, Octopus Energy offers free smart meter installation once you become a customer. This can help you take advantage of their time-of-use tariffs and optimize your energy usage patterns. Smart meters also enable automatic meter readings, eliminating the need for manual readings and ensuring accurate billing. They provide detailed insights into your energy usage patterns, helping you make informed decisions about when and how to use energy most efficiently.</p>
+                        
+                        <p>Switching to Octopus Energy is straightforward. First, use our exclusive referral link to ensure you receive the £50 credit bonus. You'll need to provide your current energy details, including your current supplier, tariff, and recent energy bills. The online application process takes just a few minutes to complete. Once your application is submitted, Octopus Energy will handle all communications with your current energy supplier. You don't need to contact your current supplier yourself. The switch will be completed on your agreed switch date, and you'll start receiving energy from Octopus Energy immediately. The entire process is designed to be as simple and stress-free as possible. They provide regular updates throughout the switching process and ensure you're informed every step of the way.</p>
+                        
+                        <p>Before switching to any energy supplier, it's important to check your current energy contract for any exit fees. While many energy suppliers don't charge exit fees, some fixed-term contracts may have penalties for early termination. However, even with exit fees, the savings from switching to Octopus Energy often outweigh these costs. It's also worth comparing energy prices across different suppliers to ensure you're getting the best deal. However, Octopus Energy's combination of competitive pricing, excellent customer service, and environmental benefits often makes them the clear choice for most households. Always read the terms and conditions carefully before making your decision. Consider factors like customer service quality, renewable energy commitment, and innovative features when choosing your energy supplier.</p>
+                        
+                        <p>As the UK continues its transition to renewable energy, companies like Octopus Energy are leading the way in innovation and customer service. Their commitment to renewable energy sources, combined with their customer-centric approach, positions them as the energy supplier of choice for the future. By switching to Octopus Energy, you're not just choosing a better energy deal; you're supporting the UK's renewable energy transition and contributing to a more sustainable future. With their £50 referral credit, excellent customer service, and commitment to 100% renewable electricity, there's never been a better time to make the switch. They are investing heavily in new technologies like battery storage, electric vehicle charging infrastructure, and smart grid solutions that will shape the future of energy in the UK.</p>
+                        
+                        <div class="seo-cta">
+                            <p><strong>Ready to start your energy switching journey?</strong></p>
+                            <a href="https://share.octopus.energy/rainy-toffee-775" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                Switch Now & Get £50 Credit
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <button class="read-more-btn" onclick="toggleReadMore(this)">... Devamı için tıkla</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <a href="/" class="footer-logo">ShareToSave</a>
-                    <p class="footer-text">Helping UK residents save money through personal recommendations and exclusive referral codes.</p>
-                    <div class="footer-social">
-                        <a href="#" class="footer-social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        </a>
-                        <a href="#" class="footer-social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                        </a>
-                        <a href="#" class="footer-social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShareToSave.co.uk</h3>
+                    <p>Helping UK residents switch to Octopus Energy and get £50 credit through our exclusive referral link.</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#referrals">Referral Codes</a></li>
-                        <li><a href="#featured">Featured Deal</a></li>
-                        <li><a href="#about">About Me</a></li>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Referral Categories</h3>
-                    <ul class="footer-links">
-                        <li><a href="#referrals">Energy Providers</a></li>
-                        <li><a href="#referrals">Broadband & TV</a></li>
-                        <li><a href="#referrals">Web Hosting</a></li>
-                        <li><a href="#referrals">All Categories</a></li>
+                
+                <div class="footer-section">
+                    <h4>Octopus Energy</h4>
+                    <ul>
+                        <li><a href="#">Official Website</a></li>
+                        <li><a href="#">Customer Reviews</a></li>
+                        <li><a href="#">Energy Tariffs</a></li>
+                        <li><a href="#">Contact Support</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <ul class="footer-links">
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="cookies-policy.html">Cookie Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                
+                <div class="footer-section">
+                    <h4>Legal & SEO</h4>
+                    <ul>
+                        <li><a href="/privacy-policy" title="Privacy Policy - ShareToSave.co.uk">Privacy Policy</a></li>
+                        <li><a href="/cookie-policy" title="Cookie Policy - ShareToSave.co.uk">Cookie Policy</a></li>
+                        <li><a href="/terms-of-service" title="Terms of Service - ShareToSave.co.uk">Terms of Service</a></li>
+                        <li><a href="/affiliate-disclosure" title="Affiliate Disclosure - ShareToSave.co.uk">Affiliate Disclosure</a></li>
+                        <li><a href="/sitemap.xml" title="Sitemap - ShareToSave.co.uk">Sitemap</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <p>&copy; 2025 ShareToSave by jonathan. Last updated: 2025-08-11 18:09:31</p>
-                <p>This is a personal blog sharing referral codes. I receive benefits when you use these codes.</p>
-                <p>This website is not affiliated with or endorsed by any of the companies mentioned.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShareToSave.co.uk. Last updated: 2025-01-11</p>
+                <p><strong>Affiliate Disclosure:</strong> This website contains affiliate links. When you click on these links and make a purchase or switch, we may receive a commission at no additional cost to you. This helps us maintain this website and provide free content to our readers.</p>
+                <p><strong>Important:</strong> This website is an independent referral site and is not affiliated with, endorsed by, or sponsored by Octopus Energy Limited. All opinions expressed are our own.</p>
+                <p><strong>Referral Program:</strong> We participate in Octopus Energy's official referral program. Both you and we receive £50 credit when you switch using our referral link, in accordance with Octopus Energy's terms and conditions.</p>
+                <p>Domain: sharetosave.co.uk | Helping UK residents save money on energy bills</p>
             </div>
         </div>
     </footer>
@@ -1364,134 +936,29 @@
     <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-content">
-            <div class="cookie-text">
-                <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
-            </div>
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
             <div class="cookie-buttons">
-                <button class="cookie-btn reject-cookies" id="rejectCookies">Reject</button>
-                <button class="cookie-btn accept-cookies" id="acceptCookies">Accept</button>
+                <button class="btn btn-secondary" onclick="rejectCookies()">Reject</button>
+                <button class="btn btn-primary" onclick="acceptCookies()">Accept</button>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const mobileToggle = document.querySelector('.mobile-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (mobileToggle) {
-                mobileToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                });
-            }
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Continue Browsing</button>
+        </div>
+    </div>
 
-            // Category filter functionality
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const referralCards = document.querySelectorAll('.referral-card');
-            
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    
-                    // Add active class to clicked button
-                    this.classList.add('active');
-                    
-                    // Get filter value
-                    const filterValue = this.getAttribute('data-filter');
-                    
-                    // Show/hide cards based on filter
-                    referralCards.forEach(card => {
-                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-
-            // Formspree form submission with AJAX
-            const contactForm = document.getElementById('contactForm');
-            const successModal = document.getElementById('successModal');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault(); // Prevent default form submission
-                    
-                    // Get the form data
-                    const formData = new FormData(contactForm);
-                    
-                    // Send data to Formspree using fetch API
-                    fetch('https://formspree.io/f/xgvzdwjp', {
-                        method: 'POST',
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            // Show success modal
-                            successModal.style.display = 'flex';
-                            // Reset the form
-                            contactForm.reset();
-                        } else {
-                            // Handle errors
-                            response.json().then(data => {
-                                if (Object.hasOwn(data, 'errors')) {
-                                    console.error(data.errors);
-                                    alert("There was a problem submitting your form. Please try again.");
-                                } else {
-                                    // Show success anyway if the error is on Formspree's end
-                                    successModal.style.display = 'flex';
-                                    contactForm.reset();
-                                }
-                            });
-                        }
-                    })
-                    .catch(error => {
-                        // Handle network errors
-                        console.error('Error:', error);
-                        alert("There was a network error. Please try again.");
-                    });
-                });
-            }
-
-            // Cookie banner
-            const cookieBanner = document.getElementById('cookieBanner');
-            const acceptCookies = document.getElementById('acceptCookies');
-            const rejectCookies = document.getElementById('rejectCookies');
-            
-            // Check if user has already made a choice
-            const cookieConsent = localStorage.getItem('cookieConsent');
-            
-            if (!cookieConsent) {
-                // Show the cookie banner after a short delay
-                setTimeout(() => {
-                    cookieBanner.style.display = 'block';
-                }, 1000);
-            }
-            
-            acceptCookies.addEventListener('click', () => {
-                localStorage.setItem('cookieConsent', 'accepted');
-                cookieBanner.style.display = 'none';
-                // Here you would initialize analytics, etc.
-            });
-            
-            rejectCookies.addEventListener('click', () => {
-                localStorage.setItem('cookieConsent', 'rejected');
-                cookieBanner.style.display = 'none';
-                // Do not initialize any tracking
-            });
-        });
-        
-        // Function to close the modal
-        function closeModal() {
-            document.getElementById('successModal').style.display = 'none';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
