@@ -1,0 +1,9 @@
+# Rewrite engine aç
+RewriteEngine On
+
+# Eğer istenen URL gerçek bir dosya veya klasör değilse
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+
+# Uzantısız isteği .html dosyasına yönlendir
+RewriteRule ^([^/]+)$ $1.html [L,R=301]
